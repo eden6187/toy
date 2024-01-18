@@ -1,6 +1,5 @@
 #!/bin/bash
 
-APP_HOME=~/web_app
 if [ ! -d "$APP_HOME" ]; then
     mkdir "$APP_HOME"
 fi
