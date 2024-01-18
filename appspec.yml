@@ -2,12 +2,12 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: ~/web_app
+    destination: /home/ubuntu/web_app
 hooks:
   AfterInstall:
     - location: scripts/start_server
       timeout: 300
-      runas: ubuntu
+      runas: root
   ApplicationStop:
     - location: scripts/stop_server
       timeout: 300
