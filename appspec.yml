@@ -4,8 +4,8 @@ files:
   - source: /
     destination: ~/web_app
 hooks:
-  BeforeInstall:
-    - location: scripts/build_project
+  AfterInstall:
+    - location: scripts/start_server
       timeout: 300
       runas: root
   ApplicationStop:
