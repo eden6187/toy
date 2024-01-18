@@ -1,6 +1,0 @@
-#!/bin/bash
-
-cd ..
-export WORKING_DIR=$(pwd)
-
-$WORKING_DIR/gradlew bootJar
