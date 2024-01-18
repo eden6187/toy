@@ -3,4 +3,4 @@
 cd ..
 export WORKING_DIR=$(pwd)
 
-WORKING_DIR/gradlew bootJar
+$WORKING_DIR/gradlew bootJar
