@@ -4,6 +4,8 @@ files:
   - source: /
     destination: /home/ubuntu/web_app/app
 hooks:
+  BeforeInstall:
+    - location: scripts/do_nothing
   AfterInstall:
     - location: scripts/start_server
       timeout: 300
