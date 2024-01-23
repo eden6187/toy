@@ -1,9 +1,3 @@
 #!/bin/bash
 
-if [ ! -d "$APP_HOME" ]; then
-    mkdir "$APP_HOME"
-fi
-
-${APP_HOME}/gradlew bootJar
-cd ${APP_HOME}/build/libs || exit
-nohup java -jar toy-0.0.1-SNAPSHOT.jar 1>/dev/null 2>&1
+nohup java -jar ./toy-0.0.1-SNAPSHOT.jar 1>/dev/null 2>&1
